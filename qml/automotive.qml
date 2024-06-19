@@ -9,10 +9,7 @@ import QtQuick.Window
 
 ApplicationWindow {
     id: window
-    width: 1280
-    height: 720
-    minimumWidth: 1180
-    minimumHeight: 663
+
     visible: true
     title: "Qt Quick Controls - Imagine Style Example: Automotive"
 
@@ -40,8 +37,11 @@ ApplicationWindow {
 
     Frame {
         id: frame
-        anchors.fill: parent
-        anchors.margins: 90
+        width: 1280
+        height: 720
+
+        anchors.centerIn: parent
+        rotation: 90
 
         RowLayout {
             id: mainRowLayout
